@@ -19,18 +19,9 @@ A Common Lisp package for making and breaking simple ciphers
 ;; We need those assumptions so we can use letter frequencies to crack the code.
 ```
 
-
-
-
     T
-
-
-
-
-
-
+    
     #<PACKAGE "SECRET-CODE">
-
 
 
 ## Caesar cipher with a single character key
@@ -51,32 +42,13 @@ A Common Lisp package for making and breaking simple ciphers
 (caesar-crack *c1*)
 ```
 
-
-
-
     *C1*
-
-
-
-
-
-
+    
     "HSRNUDQMHMDSGNTRZMC"
-
-
-
-
-
-
+    
     "ITSOVERNINETHOUSAND"
 
-
-
-
-
-
     "ITSOVERNINETHOUSAND"
-
 
 
 ## Caesar cipher with repeated key
@@ -100,31 +72,13 @@ A Common Lisp package for making and breaking simple ciphers
 ```
 
 
-
-
     *C2*
-
-
-
-
-
 
     "OWZDBLHRZEFHFSZGSUWOSSZHQ"
 
-
-
-
-
-
     "LISANEEDSBRACESDENTALPLAN"
 
-
-
-
-
-
     "LISANEEDSBRACESDENTALPLAN"
-
 
 
 ## A long Caesar cipher with repeated key
@@ -144,25 +98,11 @@ A Common Lisp package for making and breaking simple ciphers
 (repeating-caesar-crack *c3* 5)
 ```
 
-
-
-
     *C3*
-
-
-
-
-
 
     "WCAAHBHCWYUHZSQNAGBFQSKVBDHWRGQSJOQRCKOVMBGXBQBQCHJFWHUNRWABWGSBQCVWBWXVFKNBORCZKWW"
 
-
-
-
-
-
     "NOIMUSTKILLTHEDEMONSHESHOUTEDTHERADIOSAIDNOJOHNYOUARETHEDEMONSANDTHENJOHNWASAZOMBIE"
-
 
 
 ## A short Caesar cipher with repeated key
@@ -180,26 +120,11 @@ A Common Lisp package for making and breaking simple ciphers
 (repeating-caesar-crack *c4* 6)
 ```
 
-
-
-
     *C4*
-
-
-
-
-
 
     "NSBSMRLACFZSES"
 
-
-
-
-
-
     "NASRESLITERTEA"
-
-
 
 
 ```common-lisp
@@ -210,8 +135,9 @@ A Common Lisp package for making and breaking simple ciphers
 # Author, license, acknowledgements
 
 Copyright (C) 2019  Alan Tseng
+
 License: GPLv3
 
 Notes:
-- English monogram frequencies file was adapted from [here](http://practicalcryptography.com/cryptanalysis/letter-frequencies-various-languages/english-letter-frequencies/)
+- English monogram frequencies file adapted from [here](http://practicalcryptography.com/cryptanalysis/letter-frequencies-various-languages/english-letter-frequencies/)
 - This file was produced in Jupyter notebook with the `common-lisp-jupyter` kernel
