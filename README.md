@@ -11,7 +11,6 @@ A Common Lisp package for making and breaking simple ciphers
 
 ```common-lisp
 (load "secret-code.lisp")
-(in-package secret-code)
 
 ;; Assumptions:
 ;; - the message is in English language
