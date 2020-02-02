@@ -22,6 +22,8 @@
 :repeating-caesar-encode :repeating-caesar-decode
 :repeating-caesar-crack))
 
+(in-package :secret-code)
+
 (defun ngrams (str &optional (n 1))
   "Returns a list of ngrams of length n in str."
   (loop for i from 0 to (- (length str) n)
