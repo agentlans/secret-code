@@ -11,17 +11,13 @@ A Common Lisp package for making and breaking simple ciphers
 
 ```common-lisp
 (load "secret-code.lisp")
+(in-package :secret-code)
 
 ;; Assumptions:
 ;; - the message is in English language
 ;; - only uses capital A-Z and no other characters (numbers, spaces, brackets, and punctuation)
 ;; We need those assumptions so we can use letter frequencies to crack the code.
 ```
-
-    T
-    
-    #<PACKAGE "SECRET-CODE">
-
 
 ## Caesar cipher with a single character key
 
